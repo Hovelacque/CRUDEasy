@@ -1,0 +1,26 @@
+#_VReportHeader {
+    top: 0;
+}
+
+#_VReportFooter {
+    position: absolute;
+    bottom: 0;
+}
+
+#_VReportContent {
+}
+
+#_VReportContentClient {
+}
+
+thead {
+    display: table-header-group;
+    margin: 0;
+    padding: 0;
+}
+
+tfoot {
+    display: table-footer-group;
+    margin: 0;
+    padding: 0;
+}

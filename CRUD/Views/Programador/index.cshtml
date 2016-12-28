@@ -1,0 +1,312 @@
+﻿<script src="~/Scripts/Views/Programador/index.js"></script>
+<div class="row" ng-controller='app.views.programador.index as vm'>
+    <form id="Form" class="form-horizontal bordered-group" data-parsley-validate
+          data-parsley-required-message="Esta pergunta é obrigatória"
+          data-parsley-type-message="Campo Inválido">
+        <div class="col-lg-12">
+            <section class="panel panel-success">
+                <header class="panel-heading">Banco de Talentos - Easy Communication & Technology</header>
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div layout="row">
+                                <md-input-container flex="100">
+                                    <label class="lab">Nome/Name:</label>
+                                    <input required placeholder="Sua resposta" ng-model="vm.programador.Nome">
+                                </md-input-container>
+                            </div>
+                            <div layout="row">
+                                <md-input-container flex="100">
+                                    <label class="lab">Skype: ( please create an account if you don't have yet / bom criar caso não tenha)</label>
+                                    <input required placeholder="Sua resposta" ng-model="vm.programador.Skype">
+                                </md-input-container>
+                            </div>
+                            <div layout="row">
+                                <md-input-container flex="100">
+                                    <label class="lab">Telefone/Phone (Whatsapp):</label>
+                                    <input required placeholder="Sua resposta" ng-model="vm.programador.Telefone" />
+                                </md-input-container>
+                            </div>
+                            <div layout="row">
+                                <md-input-container flex="100">
+                                    <label class="lab">E-mail:</label>
+                                    <input required placeholder="Sua resposta" ng-model="vm.programador.Email" />
+                                </md-input-container>
+                            </div>
+                            <div layout="row">
+                                <md-input-container flex="100">
+                                    <label class="lab">Linkedin:</label>
+                                    <input placeholder="Sua resposta" ng-model="vm.programador.Linkdin" />
+                                </md-input-container>
+                            </div>
+                            <div layout="row">
+                                <md-input-container flex="100">
+                                    <label class="lab">Cidade / City:</label>
+                                    <input required placeholder="Sua resposta" ng-model="vm.programador.Cidade" />
+                                </md-input-container>
+                            </div>
+                            <div layout="row">
+                                <md-input-container flex="100">
+                                    <label class="lab">Estado/ State:</label>
+                                    <input required placeholder="Sua resposta" ng-model="vm.programador.Estado" />
+                                </md-input-container>
+                            </div>
+                            <div layout="row">
+                                <md-input-container flex="100">
+                                    <label class="lab">What is your hourly salary requirements? / Qual sua pretensão salarial por hora?</label>
+                                    <input required placeholder="Sua resposta" ng-model="vm.programador.SalarioHora" />
+                                </md-input-container>
+                            </div>
+                            <div layout="row">
+                                <md-input-container flex="100">
+                                    <label class="lab">What is your monthly salary requirements? / Qual sua pretensão salarial por mes?</label>
+                                    <input required placeholder="Sua resposta" ng-model="vm.programador.SalarioMes" />
+                                </md-input-container>
+                            </div>
+                            <div>
+                                <div class="form-group">
+                                    <label class="lab pad">C#<span style="color:red">*</span></label>
+                                </div>
+                                <div class="form-group">
+                                    <md-radio-group layout="row" ng-model="vm.programador.CSharp" required>
+                                        <div class="col-lg-3">Nao conheco / I don't know</div>
+                                        <md-radio-button value=0 class="md-primary col-lg-1">0</md-radio-button>
+                                        <md-radio-button value=1 class="md-primary col-lg-1">1</md-radio-button>
+                                        <md-radio-button value=2 class="md-primary col-lg-1">2</md-radio-button>
+                                        <md-radio-button value=3 class="md-primary col-lg-1">3</md-radio-button>
+                                        <md-radio-button value=4 class="md-primary col-lg-1">4</md-radio-button>
+                                        <md-radio-button value=5 class="md-primary col-lg-1">5</md-radio-button>
+                                        <div class="col-lg-3">Senior</div>
+                                    </md-radio-group>
+                                </div>
+                                <div class="form-group">
+                                    <label class="lab pad">Asp.Net MVC<span style="color:red">*</span></label>
+                                </div>
+                                <div class="form-group">
+                                    <md-radio-group layout="row" ng-model="vm.programador.Asp" required>
+                                        <div class="col-lg-3">Nao conheco / I don't know</div>
+                                        <md-radio-button value=0 class="md-primary col-lg-1">0</md-radio-button>
+                                        <md-radio-button value=1 class="md-primary col-lg-1">1</md-radio-button>
+                                        <md-radio-button value=2 class="md-primary col-lg-1">2</md-radio-button>
+                                        <md-radio-button value=3 class="md-primary col-lg-1">3</md-radio-button>
+                                        <md-radio-button value=4 class="md-primary col-lg-1">4</md-radio-button>
+                                        <md-radio-button value=5 class="md-primary col-lg-1">5</md-radio-button>
+                                        <div class="col-lg-3">Senior</div>
+                                    </md-radio-group>
+                                </div>
+                                <div class="form-group">
+                                    <label class="lab pad">AngularJs<span style="color:red">*</span></label>
+                                </div>
+                                <div class="form-group">
+                                    <md-radio-group layout="row" ng-model="vm.programador.Angular" required>
+                                        <div class="col-lg-3">Nao conheco / I don't know</div>
+                                        <md-radio-button value=0 class="md-primary col-lg-1">0</md-radio-button>
+                                        <md-radio-button value=1 class="md-primary col-lg-1">1</md-radio-button>
+                                        <md-radio-button value=2 class="md-primary col-lg-1">2</md-radio-button>
+                                        <md-radio-button value=3 class="md-primary col-lg-1">3</md-radio-button>
+                                        <md-radio-button value=4 class="md-primary col-lg-1">4</md-radio-button>
+                                        <md-radio-button value=5 class="md-primary col-lg-1">5</md-radio-button>
+                                        <div class="col-lg-3">Senior</div>
+                                    </md-radio-group>
+                                </div>
+                                <div class="form-group">
+                                    <label class="lab pad">Jquery<span style="color:red">*</span></label>
+                                </div>
+                                <div class="form-group">
+                                    <md-radio-group layout="row" ng-model="vm.programador.Jquery" required>
+                                        <div class="col-lg-3">Nao conheco / I don't know</div>
+                                        <md-radio-button value=0 class="md-primary col-lg-1">0</md-radio-button>
+                                        <md-radio-button value=1 class="md-primary col-lg-1">1</md-radio-button>
+                                        <md-radio-button value=2 class="md-primary col-lg-1">2</md-radio-button>
+                                        <md-radio-button value=3 class="md-primary col-lg-1">3</md-radio-button>
+                                        <md-radio-button value=4 class="md-primary col-lg-1">4</md-radio-button>
+                                        <md-radio-button value=5 class="md-primary col-lg-1">5</md-radio-button>
+                                        <div class="col-lg-3">Senior</div>
+                                    </md-radio-group>
+                                </div>
+                                <div class="form-group">
+                                    <label class="lab pad">Bootstrap<span style="color:red">*</span></label>
+                                </div>
+                                <div class="form-group">
+                                    <md-radio-group layout="row" ng-model="vm.programador.Bootstrap" required>
+                                        <div class="col-lg-3">Nao conheco / I don't know</div>
+                                        <md-radio-button value=0 class="md-primary col-lg-1">0</md-radio-button>
+                                        <md-radio-button value=1 class="md-primary col-lg-1">1</md-radio-button>
+                                        <md-radio-button value=2 class="md-primary col-lg-1">2</md-radio-button>
+                                        <md-radio-button value=3 class="md-primary col-lg-1">3</md-radio-button>
+                                        <md-radio-button value=4 class="md-primary col-lg-1">4</md-radio-button>
+                                        <md-radio-button value=5 class="md-primary col-lg-1">5</md-radio-button>
+                                        <div class="col-lg-3">Senior</div>
+                                    </md-radio-group>
+                                </div>
+                                <div class="form-group">
+                                    <label class="lab pad">Wordpress<span style="color:red">*</span></label>
+                                </div>
+                                <div class="form-group">
+                                    <md-radio-group layout="row" ng-model="vm.programador.Wordpress" required>
+                                        <div class="col-lg-3">Nao conheco / I don't know</div>
+                                        <md-radio-button value=0 class="md-primary col-lg-1">0</md-radio-button>
+                                        <md-radio-button value=1 class="md-primary col-lg-1">1</md-radio-button>
+                                        <md-radio-button value=2 class="md-primary col-lg-1">2</md-radio-button>
+                                        <md-radio-button value=3 class="md-primary col-lg-1">3</md-radio-button>
+                                        <md-radio-button value=4 class="md-primary col-lg-1">4</md-radio-button>
+                                        <md-radio-button value=5 class="md-primary col-lg-1">5</md-radio-button>
+                                        <div class="col-lg-3">Senior</div>
+                                    </md-radio-group>
+                                </div>
+                                <div class="form-group">
+                                    <label class="lab pad">PHP<span style="color:red">*</span></label>
+                                </div>
+                                <div class="form-group">
+                                    <md-radio-group layout="row" ng-model="vm.programador.Php" required>
+                                        <div class="col-lg-3">Nao conheco / I don't know</div>
+                                        <md-radio-button value=0 class="md-primary col-lg-1">0</md-radio-button>
+                                        <md-radio-button value=1 class="md-primary col-lg-1">1</md-radio-button>
+                                        <md-radio-button value=2 class="md-primary col-lg-1">2</md-radio-button>
+                                        <md-radio-button value=3 class="md-primary col-lg-1">3</md-radio-button>
+                                        <md-radio-button value=4 class="md-primary col-lg-1">4</md-radio-button>
+                                        <md-radio-button value=5 class="md-primary col-lg-1">5</md-radio-button>
+                                        <div class="col-lg-3">Senior</div>
+                                    </md-radio-group>
+                                </div>
+                                <div class="form-group">
+                                    <label class="lab pad">Android<span style="color:red">*</span></label>
+                                </div>
+                                <div class="form-group">
+                                    <md-radio-group layout="row" ng-model="vm.programador.Android" required>
+                                        <div class="col-lg-3">Nao conheco / I don't know</div>
+                                        <md-radio-button value=0 class="md-primary col-lg-1">0</md-radio-button>
+                                        <md-radio-button value=1 class="md-primary col-lg-1">1</md-radio-button>
+                                        <md-radio-button value=2 class="md-primary col-lg-1">2</md-radio-button>
+                                        <md-radio-button value=3 class="md-primary col-lg-1">3</md-radio-button>
+                                        <md-radio-button value=4 class="md-primary col-lg-1">4</md-radio-button>
+                                        <md-radio-button value=5 class="md-primary col-lg-1">5</md-radio-button>
+                                        <div class="col-lg-3">Senior</div>
+                                    </md-radio-group>
+                                </div>
+                                <div class="form-group">
+                                    <label class="lab pad">IOS<span style="color:red">*</span></label>
+                                </div>
+                                <div class="form-group">
+                                    <md-radio-group layout="row" ng-model="vm.programador.Ios" required>
+                                        <div class="col-lg-3">Nao conheco / I don't know</div>
+                                        <md-radio-button value=0 class="md-primary col-lg-1">0</md-radio-button>
+                                        <md-radio-button value=1 class="md-primary col-lg-1">1</md-radio-button>
+                                        <md-radio-button value=2 class="md-primary col-lg-1">2</md-radio-button>
+                                        <md-radio-button value=3 class="md-primary col-lg-1">3</md-radio-button>
+                                        <md-radio-button value=4 class="md-primary col-lg-1">4</md-radio-button>
+                                        <md-radio-button value=5 class="md-primary col-lg-1">5</md-radio-button>
+                                        <div class="col-lg-3">Senior</div>
+                                    </md-radio-group>
+                                </div>
+                                <div class="form-group">
+                                    <label class="lab pad">Ionic<span style="color:red">*</span></label>
+                                </div>
+                                <div class="form-group">
+                                    <md-radio-group layout="row" ng-model="vm.programador.Ionic" required>
+                                        <div class="col-lg-3">Nao conheco / I don't know</div>
+                                        <md-radio-button value=0 class="md-primary col-lg-1">0</md-radio-button>
+                                        <md-radio-button value=1 class="md-primary col-lg-1">1</md-radio-button>
+                                        <md-radio-button value=2 class="md-primary col-lg-1">2</md-radio-button>
+                                        <md-radio-button value=3 class="md-primary col-lg-1">3</md-radio-button>
+                                        <md-radio-button value=4 class="md-primary col-lg-1">4</md-radio-button>
+                                        <md-radio-button value=5 class="md-primary col-lg-1">5</md-radio-button>
+                                        <div class="col-lg-3">Senior</div>
+                                    </md-radio-group>
+                                </div>
+                            </div>
+                            <div layout="row">
+                                <md-input-container flex="100">
+                                    <label class="lab">Portfolio:</label>
+                                    <input placeholder="Sua resposta" ng-model="vm.programador.Portifolio" />
+                                </md-input-container>
+                            </div>
+                            <div layout="row">
+                                <md-input-container flex="100">
+                                    <label class="lab">(C#, Java, Angularjs, etc )In which programming languages you have knowledge? (Specify what has been studied in each) / Sobre quais linguagens de programação você tem conhecimento? (Especificar o que foi estudado em cada uma delas)</label>
+                                    <textarea class="form-control" placeholder="Sua resposta" ng-model="vm.programador.Linguagens"></textarea>
+                                </md-input-container>
+                            </div>
+                            <div layout="row">
+                                <md-input-container flex="100">
+                                    <label class="lab">Which languages have you worked? (Specify what has worked with each of them) / Com quais linguagens você já trabalhou? (Especificar o que foi trabalhado com cada uma delas)</label>
+                                    <textarea class="form-control" placeholder="Sua resposta" ng-model="vm.programador.Trabalhos"></textarea>
+                            </div>
+                            <div layout="row">
+                                <md-input-container flex="100">
+                                    <label class="lab">Have knowledge of any content management system for web?Tem conhecimentos em algum sistema de gerenciamento de conteúdo para web?</label>
+                                    <textarea class="form-control" placeholder="Sua resposta" ng-model="vm.programador.GerenciadorWeb"></textarea>
+                                </md-input-container>
+                            </div>
+                            <div layout="row">
+                                <md-input-container flex="100">
+                                    <label class="lab">You have experience in any image editor? If so, what? / Tem experiência em algum editor de imagens? Caso sim, qual?</label>
+                                    <textarea class="form-control" placeholder="Sua resposta" ng-model="vm.programador.EditorImagem"></textarea>
+                                </md-input-container>
+                            </div>
+                            <div layout="row">
+                                <md-input-container flex="100">
+                                    <label class="lab">What area you have more interest in learning? / Qual área você tem mais interesse de aprender?</label>
+                                    <textarea class="form-control" placeholder="Sua resposta" ng-model="vm.programador.Interesse"></textarea>
+                                </md-input-container>
+                            </div>
+                            <div layout="row">
+                                <md-input-container flex="100">
+                                    <label class="lab">You are attending or have attended a course? What? / Está cursando ou já cursou algum curso? Qual?</label>
+                                    <textarea class="form-control" placeholder="Sua resposta" ng-model="vm.programador.Curso"></textarea>
+                            </div>
+                            <div layout="row">
+                                <md-input-container flex="100">
+                                    <label class="lab">How many hours have available a week? / Quantas horas tem disponível por semana?</label>
+                                    <input required placeholder="Sua resposta" ng-model="vm.programador.Horas" />
+                                </md-input-container>
+                            </div>
+                            <div layout="row">
+                                <md-input-container flex="100">
+                                    <label class="lab">What time you have available and you want to work on projects Easy? / Qual o horário que tem disponível e que pretende trabalhar nos projetos da Easy?</label>
+                                    <input required placeholder="Sua resposta" ng-model="vm.programador.Horario" />
+                                </md-input-container>
+                            </div>
+                            <div class="form-group">
+                                <div layout="row">
+                                    <label class="lab pad">You search a job: / Você busca uma vaga:<span style="color:red">*</span></label>
+                                </div>
+                                <md-check-group layout="row" class="pad" required>
+                                    <md-checkbox class="md-primary" ng-model="vm.programador.CLT">CLT / W2</md-checkbox>
+                                    <md-checkbox class="md-primary" ng-model="vm.programador.Freelancer">Freelancer</md-checkbox>
+                                    <md-checkbox class="md-primary" ng-model="vm.programador.Estagio">Estágio / Intership</md-checkbox>
+                                </md-check-group>
+                            </div>
+                            <div layout="row">
+                                <md-input-container flex="100">
+                                    <label class="lab">Bank Information / Paypal / Itau etc</label><br />
+                                    Banco brasileiro precisa: Nome, CPF, Banco, Agencia, Conta Corrente ou Poupanca
+                                    <textarea class="form-control" placeholder="Sua resposta" ng-model="vm.programador.Banco"></textarea>
+                                </md-input-container>
+                            </div>
+                            <div layout="row">
+                                <md-input-container flex="100">
+                                    <label class="lab">Comments - additional information / Comentários - informações adicionais:</label>
+                                    <textarea class="form-control" placeholder="Sua resposta" ng-model="vm.programador.Comentarios"></textarea>
+                                </md-input-container>
+                            </div>
+                            <div class="form-group">
+                                <button class="btn bg-primary text-white" ng-click="vm.saveUpdate()">Enviar</button>
+                                <button class="btn bg-danger text-white" ng-click="vm.delete()" ng-if="vm.programador.id!=''">Deletar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </form>
+</div>
+<style>
+    .lab {
+        font-size: 25px;
+        color:black;
+    }
+    .pad {
+        padding: 15px;
+    }
+</style>

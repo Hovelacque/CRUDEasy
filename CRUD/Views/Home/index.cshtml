@@ -1,0 +1,60 @@
+﻿<script src="~/Scripts/Views/Home/index.js"></script>
+<div ng-controller='app.views.home.index as vm'>
+    <div class="row">
+        <div class="col-lg-12">
+            <section class="panel panel-primary">
+                <header class="panel-heading">Cadastros</header>
+                <div class="panel-body">
+                    <form role="form" class="form">
+                        <div class="form-group">
+                            <input type="text" class="form-control" ng-model="vm.pesquisa" />
+                        </div>
+                        <div class="form-group pull-right">
+                            <button class="btn bg-success text-white" ng-click="vm.new()">
+                                <span class="fa fa-plus text-white"> &nbsp;</span>Novo
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </div>
+    <br />
+    <div class="row" ng-show="vm.filtrado.length==0 && vm.pesquisa.length>0">
+        <div class="col-md-12">
+            <div class="alert alert-warning">
+                <strong>Atenção</strong>&nbsp;Registro não Encontrado
+            </div>
+        </div>
+    </div>
+    <div class="row" ng-show="vm.filtrado.length>0">
+        <div class="col-md-12">
+            <section class="panel panel-default">
+                <header class="panel-heading">Registros</header>
+                <div class="panel-body no-padding">
+                    <div class="table-responsive">
+                        <table class="table responsive" data-sortable>
+                            <thead>
+                                <tr>
+                                    <th>Id</th>
+                                    <th>Nome</th>
+                                    <th>Telefone</th>
+                                    <th>Skype</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr ng-repeat="prog in vm.filtrado = (vm.programadores | filter: vm.filtro)"
+                                    ng-click="vm.select(prog.Id)">
+                                    <td>{{prog.Id}}</td>
+                                    <td>{{prog.Nome}}</td>
+                                    <td>{{prog.Telefone | foneformat}}</td>
+                                    <td>{{prog.Skype}}</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>
